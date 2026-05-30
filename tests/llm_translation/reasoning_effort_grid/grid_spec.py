@@ -283,6 +283,7 @@ BEDROCK_CONVERSE_MODELS: Tuple[ModelEntry, ...] = (
         extra_params=(("aws_region_name", "us-east-1"),),
         required_env=_BEDROCK_REQ,
         caps=_CAPS_XHIGH_MAX,
+        bedrock_effort_ceiling="xhigh",
         fail_reason=(
             "claude-opus-4-7 is not entitled on the Bedrock CI account "
             "941277531214 (model access requires an AWS Sales request, not "
